@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Calculadora de matrices</h1>
+        <div id="DefinirDimensiones">  
+    
+    <div id="m1">
+        <input type="number" id="m11" class="DimensionesM" placeholder="Filas de la primera matriz"  value="">
+        X
+        <input type="number" id="m12" class="DimensionesM" placeholder="Columnas de la primera matriz" value="">
+        
+    </div> <br>
+
+
+        <div id="m2">
+        <input type="number" id="m21" class="DimensionesM" placeholder="Filas de la segunda matriz " value="">
+        X
+        <input type="number" id="m22" class="DimensionesM" placeholder="Columnas de la segunda matriz"  value=""></div>
+        <button id="generar">Generar matrices</button>
+    </div>
+<div id="MatricesCompletas" style="display: none;">
+    <div id="Matriz1Completa" class="parte"><table id="TablaM1"></table></div>
+    <select name="" id="operacion">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="X">X</option>
+        <option value="/">/</option>
+    </select>
+    <div id="Matriz2Completa" class="parte"><table id="TablaM2"></table></div>
+    =
+    <div id="MatrizResultado"></div>
+    </div>
+    <button id="RealizarOperacion" style="display:none;">Realizar operación</button>    
+    
+</div>
+</body>
+<script src="CM.js"></script>
+</html>
